@@ -1,4 +1,4 @@
-html {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -28,13 +28,15 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+/***** CONTENEDOR *****/
 .quote-container {
   width: auto;
-  max-width: 700px;
+  max-width: 800px;
   padding: 20px 30px;
   border-radius: 10px;
   background-color: rgba(192, 109, 133, 0.5);
 }
+/***** QUOTE *****/
 .quote-text {
   font-size: 1.5rem;
   font-weight: 600;
@@ -46,6 +48,7 @@ body {
   font-size: 2.5rem;
   padding-right: 0.5rem;
 }
+/***** BOTONES *****/
 .buttons-container {
   margin-top: 15px;
   display: flex;
@@ -64,7 +67,7 @@ button {
 }
 button:hover {
   background-color: #fafafa;
-  border: none;
+  border: 1px solid #fff;
 }
 button:active {
   transform: translate(0, 0.3rem);
@@ -84,6 +87,7 @@ button:active {
   font-weight: 400;
   font-style: italic;
 }
+/***** LOADING SPINNER *****/
 .loader {
   border: 16px solid #f3f3f3;
   border-top: 16px solid #c06c84;
@@ -96,6 +100,7 @@ button:active {
   top: 50%;
   margin: -76px 0 0 -76px;
 }
+/***** ANIMACIONES *****/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -104,11 +109,12 @@ button:active {
     transform: rotate(360deg);
   }
 }
+/***** MOBILE *****/
 @media screen and (max-width: 1000px) {
   .quote-container {
-    margin: auto 10px;
+    margin: auto 5px;
   }
   .quote-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
